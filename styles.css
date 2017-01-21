@@ -11,12 +11,12 @@ header {
 
  main {
  	max-width: 90%;
-    display: inline-block;
+ 	display: inline-block;
 }
 
 nav {
 	display: inline-block;
-    vertical-align: top;
+	vertical-align: top;
 	margin-top:0px;
 	padding-top: 10px;
 	border-top: 1px solid grey;
@@ -42,9 +42,9 @@ span {
  }
 
  ul {
-   list-style-type: none;
-   margin: 0px;
-   padding: 0;
+ 	list-style-type: none;
+ 	margin: 0px;
+ 	padding: 0;
  }
 
 a {
@@ -111,21 +111,21 @@ footer {
 }
 
 a:visited {
-    color: black ;
+	color: black ;
 }
 
 a:hover {
-    background-color: grey;
+	background-color: grey;
 }
 
 a:active {
-    color: white;
+	color: white;
 }
 
 
 @media screen and (max-width: 800px) {
   p {
- font-size: 12px;
+  	font-size: 12px;
  
   }
 }
@@ -133,14 +133,14 @@ a:active {
 
 @media screen and (max-width: 800px) {
   h2 {
- font-size: 15px;
+  	font-size: 15px;
   }
 }
 
 
 @media screen and (max-width: 800px) {
  main, .fav-site, .sf-art {
-  max-width: 100%;
+ 	max-width: 100%;
 
   }
 }
@@ -148,7 +148,7 @@ a:active {
 @media screen and (max-width: 800px) {
  nav {
  	display: block;
-  max-width: 100%;
-text-align: center;
+ 	max-width: 100%;
+ 	text-align: center;
   }
 }
