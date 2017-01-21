@@ -4,21 +4,20 @@ body {
 
 
 header {
-
 	border-top: 2px solid grey;
 	border-bottom: 2px solid grey;
 	text-align: center;	
 }
 
  main {
-  max-width: 90%;
-   display: inline-block;
+ 	max-width: 90%;
+    display: inline-block;
 }
 
 nav {
 	display: inline-block;
     vertical-align: top;
-	margin-top:-15px;
+	margin-top:0px;
 	padding-top: 10px;
 	border-top: 1px solid grey;
 	margin-bottom: 25px;
@@ -66,6 +65,7 @@ img {
 	 border-right:5px solid grey;
 	 margin-top:20px;
 	 font-family: Arial;
+	 text-align: justify;
 
 }
 
@@ -74,6 +74,7 @@ img {
 	padding-top: 40px;
 	padding-bottom: 40px;
 	font-family: Arial;
+	text-align: justify;
 }
 
 #pic2 {
@@ -90,7 +91,7 @@ img {
 }
 
 textarea{
-	width:40%;
+	width: 38%;
 	height: 50px;
 	background-image: url(images/pinstripe.png);
 
@@ -122,7 +123,7 @@ a:active {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   p {
  font-size: 12px;
  
@@ -130,7 +131,7 @@ a:active {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   h2 {
  font-size: 15px;
   }
@@ -141,5 +142,13 @@ a:active {
  main, .fav-site, .sf-art {
   max-width: 100%;
 
+  }
+}
+
+@media screen and (max-width: 800px) {
+ nav {
+ 	display: block;
+  max-width: 100%;
+text-align: center;
   }
 }
