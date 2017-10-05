@@ -6,6 +6,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -30,9 +31,10 @@
 						<div id="menu">
 							<ul>
 								<li><a href="index.html">Home</a></li>
-								<li><a href="resume.html">Resume (pdf)</a></li>
-								<li><a href="elements.html">Elements</a></li>
-								
+								<li><a href="index.html#two">Projects</a></li>
+								<li><a href="index.html#three">Tech stack</a></li>
+								<li><a href="index.html#contact">Contact</a></li>
+								<li><a href="resume.html">Resume</a></li>
 							</ul>
 						</div>
 					</li>
@@ -74,7 +76,18 @@
 			<!-- Two -->
 			<section id="two" class="wrapper alt style2">
 				<section class="spotlight">
-					<div class="image"><img src="images/weather.png" alt="" /></div><div class="content">
+					<div class="image"><img src="images/pic01.png" alt="" style= "width: 100%;cursor:zoom-in" onclick="document.getElementById('modal04').style.display='block'"/>
+						<div id="modal04" class="w3-modal" onclick="this.style.display='none'">
+							<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+							<div class="w3-modal-content w3-animate-zoom">
+								<img src="images/pic01.png" style="width:100%">
+							</div>
+						</div>
+					</div>
+
+
+
+					<div class="content">
 						<h2>Weather-SMS<br />
 						</h2>
 						<p>Weather is a fully responsive forecast application that utilizes Twilio and WU APIs, enabling users(registered with valid US phone number) to check weather using text messaging.The forecasts available to all users are: 5 day, 10 day, hourly 5 day and hourly 10 day. In addition forecast history can be traced back up to 60 years for some cities. Registered users have the option to check their search history.</p>
@@ -85,7 +98,16 @@
 
 				</section>
 				<section class="spotlight">
-					<div class="image"><img src="images/bloke(8).png" alt="" /></div><div class="content">
+					<div class="image"><img src="images/bloke(8).png" alt="" style= "width: 100%;cursor:zoom-in" onclick="document.getElementById('modal03').style.display='block'"/>
+						<div id="modal03" class="w3-modal" onclick="this.style.display='none'">
+							<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+							<div class="w3-modal-content w3-animate-zoom">
+								<img src="images/bloke(8).png" style="width:100%">
+							</div>
+						</div>
+					</div>
+
+					<div class="content">
 						<h2>BlokeBlog<br />
 						</h2>
 						<p>Professional grade sample app featuring advanced security login and authentication framework. Registered users can create posts, upload pictures and follow other peoples activity.</p>
@@ -94,15 +116,34 @@
 					</div>
 				</section>
 				<section class="spotlight">
-					<div class="image"><img src="images/movies.png" alt="" /></div><div class="content">
+					<div class="image"><img src="images/movies.png" alt="" style= "width: 100%;cursor:zoom-in" onclick="document.getElementById('modal02').style.display='block'"/>
+						<div id="modal02" class="w3-modal" onclick="this.style.display='none'">
+							<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+							<div class="w3-modal-content w3-animate-zoom">
+								<img src="images/movies.png" style="width:100%">
+							</div>
+						</div>
+						</div>
+
+					<div class="content">
 						<h2>Crab-movies<br /></h2>
-						<p>Client project providing data about the top 250 movies. Users can rate and review movies and actors. Data obtained from IMDB.</p>
+						<p>Client team project providing data about the top 250 movies. Users can rate and review movies and actors. Data obtained from IMDB.</p>
 						<a style="background-color: grey;" href="http://crabmovies.herokuapp.com/" class="button special">Live</a>
 						<a href="https://github.com/IliyanGanev/crab-movies" class="button special icon fa-github">Github</a>
 					</div>
 				</section>
-				<section class="spotlight">
-					<div class="image"><img src="images/habits.png" alt="" /></div><div class="content">
+
+
+				<section class="spotlight">	
+					<div class="image"><img src="images/habits.png" alt="" style= "width: 100%;cursor:zoom-in" onclick="document.getElementById('modal01').style.display='block'"/>
+						<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+							<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+							<div class="w3-modal-content w3-animate-zoom">
+								<img src="images/habits.png" style="width:100%">
+							</div>
+						</div>
+					</div>
+					<div class="content">
 						<h2>Daily Habits<br />
 						</h2>
 						<p>Journaling application that allows users to log daily activity via texting. Provides meaningful data on users daily habits. Built in five days with a team of five.</p>
@@ -111,17 +152,16 @@
 					</div>
 				</section>
 
-
 				<section class="spotlight">
 					<div class="image">
-					<iframe src="untitled.html" width="600px" height="400px" scrolling="no">
+						<iframe src="untitled.html" width="600" height="400" scrolling="no">
 							<p>Your browser does not support iframes.</p>
 						</iframe>
 
 					</div><div class="content">
 						<h2>Biohazard molecule<br />
 						</h2>
-						<p>It is a simple experiment with tree.js 3D geometry.</p>
+						<p>It is a simple experiment with three.js 3D geometry.</p>
 						<a style="background-color: grey;" href="untitled.html" class="button special">Full screen</a>
 					</div>
 				</section>
@@ -158,7 +198,7 @@
 								Ableton Live
 							</p>
 						</li>
-	<!-- 			<li class="icon fa-heart-o">
+			<!-- 	<li class="icon fa-heart-o">
 						<h3>Aenean Primis</h3>
 							<p>Augue consectetur sed interdum imperdiet et ipsum. Mauris lorem tincidunt nullam amet leo Aenean ligula consequat consequat.</p>
 						</li>
@@ -171,7 +211,7 @@
 			</section>
 
 			<!-- CTA -->
-<!-- 
+			<!-- 
 			<section id="cta" class="wrapper style4">
 				<div class="inner">
 					<ul class="actions vertical">
@@ -181,14 +221,14 @@
 				</div>
 			</section> -->
 
-
-			<section id="cta" class="wrapper style4">
-				<div class="inner">
-					<!-- Contact -->
-					<section id="contact" class="main style3 secondary">
-						<div class="content">
-							<header style="width: 100%;
-	text-align: center";>
+			<section id="contact">
+				<section  id="cta" class="wrapper style4">
+					<div class="inner">
+						<!-- Contact -->
+						<section class="main style3 secondary">
+							<div class="content">
+								<header style="width: 100%;
+								text-align: center;">
 								<h2>Say Hello.</h2>
 								<p>Shoot me an email. I will be happy to share ideas or have coffee and talk.</p>
 							</header>
@@ -206,32 +246,33 @@
 					</section>
 				</div>
 			</section>
+		</section>
 
 
 
-			<!-- Footer -->
-			<footer id="footer">
-				<ul class="icons">
-					<li><a href="https://github.com/IliyanGanev" class="icon fa-github"><span class="label">Github</span></a></li>
-					<li><a href="https://www.linkedin.com/in/iliyan-ganev-6a940763" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
-					<li><a href="https://www.instagram.com/botilko/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-					<li><a class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-					<li><a href="mailto:ganeviliyan@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
-				</ul>
-				<ul class="copyright">
-					<li>&copy; 2017 | No rights reserved</li><li> </li>
-				</ul>
+		<!-- Footer -->
+		<footer id="footer">
+			<ul class="icons">
+				<li><a href="https://github.com/IliyanGanev" class="icon fa-github"><span class="label">Github</span></a></li>
+				<li><a href="https://www.linkedin.com/in/iliyan-ganev-6a940763" class="icon fa-linkedin"><span class="label">LinkedIn</span></a></li>
+				<li><a href="https://www.instagram.com/botilko/" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+				<li><a class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+				<li><a href="mailto:ganeviliyan@gmail.com" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+			</ul>
+			<ul class="copyright">
+				<li>&copy; 2017 | No rights reserved</li><li> </li>
+			</ul>
+		</footer>
+		
 
-			</div>
-
-			<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
-
-		</body>
-		</html>
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/skel.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+	</div>	
+</body>
+</html>
